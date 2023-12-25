@@ -1,0 +1,37 @@
+let mapleader=','
+
+set relativenumber
+set number
+set surround
+set multiple-cursors
+set commentary
+set argtextobj
+set easymotion
+set textobj-entire
+set ReplaceWithRegister
+set exchange
+
+""" Common settings -------------------------
+set showmode
+set so=5
+set incsearch
+set nu
+
+""" Idea specific settings ------------------
+set ideajoin
+set ideastatusicon=gray
+
+map sq :wq<CR>
+map ss :split<CR><C-w>j
+map sv :vsplit<CR><C-w>l
+map sh <C-w>h
+map sl <C-w>l
+map sj <C-w>j
+map sk <C-w>k
+
+map rn <Action>(RenameElement)
+map <leader>s <Action>(SelectInProjectView)
+map <leader>t <Action>(ActivateProjectToolWindow)
+map gI <Action>(GotoImplementation)
+map gr <Action>(CallHierarchy)
+map gd <Action>(GotoDeclaration)
